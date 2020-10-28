@@ -1,0 +1,170 @@
+body{
+    font-family: "Baloo Paaji 2",cursive;
+    margin: 0;
+    
+    header{
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        z-index: 1000;
+
+        nav{
+            background-color: rgb(230, 230, 230);
+               
+            padding: 10px 0px;
+            ul{
+                li{
+                    padding: 0px 10px;
+                    a{
+                        color: black;
+                        &:hover{
+                            color: aqua;
+                        transition:  0.8s;
+
+                        }
+                    }
+                }
+            }
+        }
+        .top-header{
+            padding: 8px 0px;
+            background-color: #343A40;
+            display: flex;
+             .contact{
+                 margin-left: 50px;
+                 display: flex;
+                .contact1 , .contact2{
+                    padding: 0px 25px;
+               
+                    span{
+                     color: white;
+                    }
+                    a{
+                        color: #32DBC2;
+
+                           &:hover{
+                               text-decoration: none;
+                               color: rgb(33, 155, 137);
+                           }
+                    }
+                }
+             }
+             .social{
+                  display: flex;
+                  margin-left: 450px;
+                  i{
+                   padding:0px 7px ;  
+                   color: #32DBC2;
+                   &:hover{
+                       color: rgb(20, 248, 214);
+                   }
+                } 
+             }
+        }
+    }
+
+    main{
+        display: flex;
+
+        aside{
+            width: 20%;
+            border-right: 3px solid gray;
+            h1, p{
+                margin-left: 40px;
+            }
+            .icon-box{
+                display: flex;
+                justify-content: space-around;
+            }
+            .menu{
+                margin-top: 100px;
+                ul{
+                    li{
+                        list-style-type: none;
+                        margin: 10px 0px;
+                    }
+                }
+            }
+        }
+
+        section{
+            width: 80%;
+            background-color: aqua;
+
+            .message-menu{
+                .message{
+                    background-color: white;
+                    margin:30px ;
+                    width: 200px;
+                    margin-left: 30px;
+                    padding: 10px 10px;
+                    border-radius: 10px;
+                    h6{
+                        color: red;
+                    }
+                }
+            }
+            form{
+                bottom: 20px;
+                margin-left: 40px;
+                position: fixed;
+                input{
+                   width: 60vw;
+                   z-index: 1000;
+                }
+               i{
+                   background-color: rgb(166, 0, 255);
+                   border-radius: 100px;
+                   padding: 10px 13px;
+                   font-size: 25px;
+                   color: white;
+               }
+             
+            }
+        }
+    }
+
+}
+
+
+@media only screen and(max-width:1000px){
+    body{
+        main{
+            aside{
+                display: none;
+            }
+            section{
+                width: 100%;
+                .message-menu{
+                    form{
+                        input{
+                            display: flex;
+                            width: 100px;
+                            position: fixed;
+                            z-index: 10000000;
+                        }
+                    }
+                }
+            }
+        }
+
+        header{
+            .top-header{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:800px){
+    body{
+        main{
+            margin-top: 0px;
+            section{
+                margin-top: 0px;
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+body {
+  font-family: "Baloo Paaji 2",cursive;
+  margin: 0;
+}
+
+body header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+body header nav {
+  background-color: #e6e6e6;
+  padding: 10px 0px;
+}
+
+body header nav ul li {
+  padding: 0px 10px;
+}
+
+body header nav ul li a {
+  color: black;
+}
+
+body header nav ul li a:hover {
+  color: aqua;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body header .top-header {
+  padding: 8px 0px;
+  background-color: #343A40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .top-header .contact {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .top-header .contact .contact1, body header .top-header .contact .contact2 {
+  padding: 0px 25px;
+}
+
+body header .top-header .contact .contact1 span, body header .top-header .contact .contact2 span {
+  color: white;
+}
+
+body header .top-header .contact .contact1 a, body header .top-header .contact .contact2 a {
+  color: #32DBC2;
+}
+
+body header .top-header .contact .contact1 a:hover, body header .top-header .contact .contact2 a:hover {
+  text-decoration: none;
+  color: #219b89;
+}
+
+body header .top-header .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 450px;
+}
+
+body header .top-header .social i {
+  padding: 0px 7px;
+  color: #32DBC2;
+}
+
+body header .top-header .social i:hover {
+  color: #14f8d6;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main aside {
+  width: 20%;
+  border-right: 3px solid gray;
+}
+
+body main aside h1, body main aside p {
+  margin-left: 40px;
+}
+
+body main aside .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main aside .menu {
+  margin-top: 100px;
+}
+
+body main aside .menu ul li {
+  list-style-type: none;
+  margin: 10px 0px;
+}
+
+body main section {
+  width: 80%;
+  background-color: aqua;
+}
+
+body main section .message-menu .message {
+  background-color: white;
+  margin: 30px;
+  width: 200px;
+  margin-left: 30px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+body main section .message-menu .message h6 {
+  color: red;
+}
+
+body main section form {
+  bottom: 20px;
+  margin-left: 40px;
+  position: fixed;
+}
+
+body main section form input {
+  width: 60vw;
+  z-index: 1000;
+}
+
+body main section form i {
+  background-color: #a600ff;
+  border-radius: 100px;
+  padding: 10px 13px;
+  font-size: 25px;
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  body main aside {
+    display: none;
+  }
+  body main section {
+    width: 100%;
+  }
+  body main section .message-menu form input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+    position: fixed;
+    z-index: 10000000;
+  }
+  body header .top-header {
+    display: none;
+  }
+}
+/*# sourceMappingURL=group1.css.map */

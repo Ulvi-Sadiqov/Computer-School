@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComputerSchool.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bc3dcb3e0.js" crossorigin="anonymous"></script>
+<style>
+    body {
+  font-family: "Baloo Paaji 2",cursive;
+  margin: 0;
+}
+
+body header {
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  position: fixed;
+}
+
+body header .top-header {
+  padding: 8px 0px;
+  background-color: #343A40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .top-header .contact {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .top-header .contact .contact1, body header .top-header .contact .contact2 {
+  padding: 0px 25px;
+}
+
+body header .top-header .contact .contact1 span, body header .top-header .contact .contact2 span {
+  color: white;
+}
+
+body header .top-header .contact .contact1 a, body header .top-header .contact .contact2 a {
+  color: #32DBC2;
+}
+
+body header .top-header .contact .contact1 a:hover, body header .top-header .contact .contact2 a:hover {
+  text-decoration: none;
+  color: #219b89;
+}
+
+body header .top-header .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 450px;
+}
+
+body header .top-header .social i {
+  padding: 0px 7px;
+  color: #32DBC2;
+}
+
+body header .top-header .social i:hover {
+  color: #14f8d6;
+}
+
+body header .bottom-header .navbar {
+  background-color: #e6e6e6;
+  padding: 10px 0px;
+}
+
+body header .bottom-header .navbar ul li {
+  padding: 0px 10px;
+}
+
+body header .bottom-header .navbar ul li a {
+  color: black;
+}
+
+body header .bottom-header .navbar ul li a:hover {
+  color: aqua;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body main {
+  margin-top: 100px;
+}
+
+body main .front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .front .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .front .about a {
+  display: inline-block;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 5px 10px;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(orange), to(yellow));
+  background-image: linear-gradient(to right, orange, yellow);
+}
+
+body main .front .about a:hover {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(yellow));
+  background-image: linear-gradient(to left, orange, yellow);
+}
+
+body main .front .img img {
+  margin-top: 30px;
+}
+
+body main .office {
+  margin: 100px;
+}
+
+body main .office .cards-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .office .cards-menu .card {
+  border: none;
+  text-align: center;
+}
+
+body main .office .cards-menu .card span {
+  color: #777777;
+}
+
+body main .office .cards-menu .card a {
+  background-image: -webkit-gradient(linear, left top, right top, from(blue), to(aqua));
+  background-image: linear-gradient(to right, blue, aqua);
+  border-radius: 30px;
+  margin-top: 10px;
+  color: white;
+  padding: 5px 0px;
+}
+
+body main .office .cards-menu .card a:hover {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, right top, left top, from(blue), to(aqua));
+  background-image: linear-gradient(to left, blue, aqua);
+}
+
+body main .creat-new-account h2 {
+  text-align: center;
+}
+
+body main .creat-new-account form {
+  background-color: #c9c9c9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .creat-new-account form input {
+  font-size: 1.5em;
+  width: 30%;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+}
+
+body main .creat-new-account form a {
+  background-image: -webkit-gradient(linear, left top, right top, from(aqua), to(blue));
+  background-image: linear-gradient(to right, aqua, blue);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body main .creat-new-account form a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(aqua), to(blue));
+  background-image: linear-gradient(to left, aqua, blue);
+}
+
+body main .programming-language h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+body main .programming-language .card-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main .programming-language .card-menu .card {
+  border: none;
+  text-align: center;
+}
+
+body main .programming-language .card-menu .card a {
+  background-image: -webkit-gradient(linear, left top, right top, from(aqua), to(blue));
+  background-image: linear-gradient(to right, aqua, blue);
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: white;
+}
+
+body main .programming-language .card-menu .card a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(aqua), to(blue));
+  background-image: linear-gradient(to left, aqua, blue);
+}
+
+body main .programming-language .card-menu :nth-child(4) {
+  margin-top: 16px;
+}
+
+body main .onenote {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+body main .onenote .right p {
+  color: #777777;
+}
+
+body main .onenote .right a {
+  text-decoration: none;
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(blue), to(aqua));
+  background-image: linear-gradient(to right, blue, aqua);
+  color: white;
+  padding: 0px 15px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+body main .onenote .right a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(blue), to(aqua));
+  background-image: linear-gradient(to left, blue, aqua);
+}
+
+body main .os {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main .os .left {
+  margin-top: 50px;
+}
+
+body main .os .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .os .right a {
+  text-decoration: none;
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(blue), to(aqua));
+  background-image: linear-gradient(to right, blue, aqua);
+  color: white;
+  padding: 0px 15px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+body main .os .right a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(blue), to(aqua));
+  background-image: linear-gradient(to left, blue, aqua);
+}
+
+body footer {
+  background-color: #919191;
+  margin-top: 100px;
+}
+
+body footer .lesson-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body footer .lesson-menu .lesson {
+  padding: 40px 0px;
+}
+
+body footer .lesson-menu .lesson ul li {
+  list-style-type: none;
+}
+
+body footer .lesson-menu .lesson ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+body footer .lesson-menu .lesson ul li a:hover {
+  color: aqua;
+}
+
+body footer .contact-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 50px 0px;
+}
+
+body footer .contact-menu .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .contact-menu .icon i {
+  color: white;
+  font-size: 3em;
+}
+
+body footer .contact-menu .icon span {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  body header .top-header {
+    display: none;
+  }
+  body main .front .about {
+    margin-top: 50px;
+  }
+  body main .office .cards-menu .card {
+    margin-top: 40px;
+  }
+  body main .office .cards-menu .card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body main .office .card-menu .card {
+    margin-top: 40px;
+  }
+  body main .creat-new-account form {
+    background-color: #c9c9c9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .creat-new-account form input {
+    width: 50%;
+  }
+  body main .os .left, body main .onenote .left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body main .front img {
+    width: 100%;
+    height: 400px;
+  }
+  body main .programming-language .card-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .programming-language .card-menu .card {
+    margin: 50px 0px;
+  }
+  body main .office .cards-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body footer .lesson-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body footer .contact-menu .icon .text {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+</style>
+</head>
+<body>
+
+  
+    <header>
+      <div class="top-header"> 
+        <div class="contact">
+            <div class="contact1">
+             <span>contact:</span>
+                <a href="#" onclick="Call()">+3202 </a>
+            </div>
+            <div class="contact2">
+                <span>email:</span>
+                   <a href="#" onclick="mail()">Business@gmail.com</a>
+            </div>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+    </div>  
+    <div class="bottom-header">
+      <nav class="navbar navbar-expand-lg  ">
+        <img width="50px" src="https://i.pinimg.com/originals/41/a4/05/41a405caa503067ce3718bd325f25a3e.png" alt="" style="margin-left: 50px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-sliders-h"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto" style="margin-right: 50px;">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MyBusiness</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Work Group
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="group1.html">1</a>
+            <a class="dropdown-item" href="group2.html">2</a>
+            <a class="dropdown-item" href="#">3</a>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true" onclick="SignIn()">Sign in</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " onclick="Windows()" href="#" tabindex="-1" aria-disabled="true">Setting</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav> 
+    </div>
+      
+    </header>
+
+    <main>
+      <section class="front">
+         <div class="about">
+              <h2 id="name"></h2>
+              <h1>Programmer</h1>
+              <span>Learn HTMl ,Css ,Js, C#</span>
+              <p>Learn 20 month</p>
+              <a href="" >Get started</a>  <br>
+              <a href="#" id="join" onclick="join()" >Join</a>
+         </div>
+         <div class="img"> 
+                <img src="https://learnworthy.net/wp-content/uploads/2019/10/Top-5-programming-languages-every-programmer-should-know-in-2019.jpg" alt=""  height="400px">
+         </div>
+      </section>
+
+      <section class="office">
+        <h2 style="text-align: center;">Office Apps</h2>
+   <div class="cards-menu">
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Microsoft_Office_Word_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Word_%282018%E2%80%93present%29.svg.png" alt="" width="150px" height="150px">
+        <h4>Word</h4>
+        <span>Make Text</span>
+        <a href="#">Learn</a>
+        <a href="https://www.office.com/launch/word?ui=en-US&rs=US&auth=2">Join</a>
+        </div>
+    <div class="card">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Microsoft_Office_PowerPoint_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_PowerPoint_%282018%E2%80%93present%29.svg.png" alt="" width="150px" height="150px">
+        <h4>Powerpoint</h4>
+       <span>Make Slide</span>
+       <a href="#">Learn</a>
+       <a href="https://www.office.com/launch/powerpoint?auth=2">Join</a>
+      </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Microsoft_Office_Excel_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282018%E2%80%93present%29.svg.png" alt=""width="150px" height="150px">
+      <h4>Excel</h4>
+       <span>Make Table</span>
+       <a href="#">Learn</a>
+       <a href="https://www.office.com/launch/excel?auth=2">Join</a>
+    </div>
+   </div>
+      </section>
+
+
+      <section class="creat-new-account" id="new">
+        <h2>Creat New Account</h2>
+          <form action="">
+            <label for="">Name:</label><input type="text" placeholder="Enter your Name"> <br>
+           <label for="">Email:</label> <input type="email" name="" id="" placeholder="Enter Email"> <br>
+           <label for="">Parol:</label> <input type="password" name="" id="" placeholder="Password">
+           <a href="" onclick="NewAccount()">Creat Account</a>
+          
+          </form>
+      </section>
+
+
+      <section class="programming-language">
+
+        <h2>Programming Language</h2>
+        <div class="card-menu">
+          <div class="card">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" alt="" width="100px" height="120px">
+             <h4>JS</h4>
+             <a href="https://www.w3schools.com/js/default.asp">Learn</a>
+             <a href="https://playcode.io/">Join</a>
+          </div>
+          <div class="card">
+            <img src="data:image/png;base64,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" alt=""width="120px" height="120px">
+            <h4>HTML</h4>
+            <a href="https://www.w3schools.com/html/default.asp">Learn</a>
+            <a href="https://playcode.io/">Join</a>
+          </div>
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt=""width="100px" height="120px">
+            <h4>CSS</h4>
+            <a href="https://www.w3schools.com/css/default.asp">Learn</a>
+            <a href="https://playcode.io/">Join</a>
+          </div>
+          <div class="card">
+            <img src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt=""width="100px" height="100px">
+            <h4>C#</h4>
+            <a href="https://www.w3schools.com/cs/default.asp">Learn</a>
+            <a href="https://dotnetfiddle.net/">Join</a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="onenote">
+        
+        <div class="left">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Microsoft_Office_OneNote_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_OneNote_%282018%E2%80%93present%29.svg.png" width="250px" alt="">
+        </div>
+        <div class="right">
+             <h2>OneNote</h2>
+             <p>Creat Project. There are draw,check,audio <br> video , img , sticker function in the OneNote</p>
+             <a href="">Learn</a> <br>
+             <br>
+             <a href="https://www.microsoft.com/en-ww/microsoft-365/onenote/digital-note-taking-app?rtc=1" >Join</a>
+        </div>
+      </section>
+
+
+      <section class="os">
+        <div class="left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1024px-Windows_logo_-_2012.svg.png" alt="" width="170px" height="170px">
+        </div>
+        <div class="right">
+            <h2>Windows 10</h2>
+            <p>A new operating system.</p>
+            <a href="">Learn More</a>
+            <a href="">Apps</a>
+            <a href="">New Function</a>
+        </div>
+      </section>
+
+    </main>
+
+<footer>
+
+<div class="lesson-menu">
+
+   <div class="lesson">
+       <ul>
+         <li>
+           <a href="">Html</a>
+         </li>
+         <li>
+          <a href="">Css</a>
+        </li>
+        <li>
+          <a href="">JS</a>
+        </li>
+        <li>
+          <a href="">C#</a>
+        </li>
+       </ul>
+   </div>
+   <div class="lesson">
+    <ul>
+      <li>
+        <a href="">Bootstrap</a>
+      </li>
+      <li>
+       <a href="">Sass</a>
+     </li>
+     <li>
+       <a href="">Ajax</a>
+     </li>
+     <li>
+       <a href="">Windows 10</a>
+     </li>
+    </ul>
+   </div>
+   <div class="lesson">
+    <ul>
+      <li>
+        <a href="">Web sites</a>
+      </li>
+      <li>
+       <a href="">Templates</a>
+     </li>
+     <li>
+       <a href="">Editor</a>
+     </li>
+     <li>
+       <a href="">Binary</a>
+     </li>
+    </ul>
+   </div>
+   <div class="lesson">
+    <ul>
+      <li>
+        <a href="">Apps</a>
+      </li>
+      <li>
+       <a href="">Shortcut</a>
+     </li>
+     <li>
+       <a href="">Draw</a>
+     </li>
+     <li>
+       <a href="">More</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <hr>
+  <div class="contact-menu">
+    <div class="icon">
+     <a href="#ffw"onclick="like()"><i class="far fa-thumbs-up" id="like" ></i></a> 
+       <span class="text">I Like This Website</span>
+    </div>
+    <div class="icon">
+          <a href="#fwef"onclick="dislike()"><i class="far fa-thumbs-down" id="dislike" onclick="dislike()"></i></a>
+       <span class="text" >I Dislike This Website</span>
+
+  </div>
+</div>
+
+
+
+</footer>
+
+
+<script>
+
+function SignIn (){
+    let name = prompt("Enter your Name");
+let mail = prompt("Enter your Email");
+let password = prompt("Enter your Email Password");
+document.getElementById("name").innerHTML="Dear"+" "+name;
+if(name == null){
+  document.getElementById("name").innerHTML="  ";
+}
+}
+
+
+
+
+function NewAccount(){
+    alert("Account yaradildi");
+    alert("Email:213421@computer.edu.com");
+    alert("Password: 671345");
+    alert("Group:1")
+}
+
+function Call(){
+    confirm("Call +3202");
+    alert(
+      "nomre mesguldu!! . 3-4 deq gozleyin"
+    )
+}
+
+
+
+
+  function Windows() {
+    let windows = window.open("setting.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=400,width=500,height=400");
+    myWindow.document.write();
+  }
+
+  function mail(){
+      prompt("Enter Your Message","");
+      alert("sending!");
+  }
+
+  function like(){
+     document.getElementById("like").style.color="blue";
+  }
+  function dislike(){
+    document.getElementById("dislike").style.color="blue";
+ }
+
+
+
+
+ function join() {
+  let windows = window.open("join.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=400,width=500,height=400");
+  myWindow.document.write();
+}
+
+
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

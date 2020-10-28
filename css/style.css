@@ -1,0 +1,475 @@
+body {
+  font-family: "Baloo Paaji 2",cursive;
+  margin: 0;
+}
+
+body header {
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  position: fixed;
+}
+
+body header .top-header {
+  padding: 8px 0px;
+  background-color: #343A40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .top-header .contact {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .top-header .contact .contact1, body header .top-header .contact .contact2 {
+  padding: 0px 25px;
+}
+
+body header .top-header .contact .contact1 span, body header .top-header .contact .contact2 span {
+  color: white;
+}
+
+body header .top-header .contact .contact1 a, body header .top-header .contact .contact2 a {
+  color: #32DBC2;
+}
+
+body header .top-header .contact .contact1 a:hover, body header .top-header .contact .contact2 a:hover {
+  text-decoration: none;
+  color: #219b89;
+}
+
+body header .top-header .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 450px;
+}
+
+body header .top-header .social i {
+  padding: 0px 7px;
+  color: #32DBC2;
+}
+
+body header .top-header .social i:hover {
+  color: #14f8d6;
+}
+
+body header .bottom-header .navbar {
+  background-color: #e6e6e6;
+  padding: 10px 0px;
+}
+
+body header .bottom-header .navbar ul li {
+  padding: 0px 10px;
+}
+
+body header .bottom-header .navbar ul li a {
+  color: black;
+}
+
+body header .bottom-header .navbar ul li a:hover {
+  color: aqua;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body main {
+  margin-top: 100px;
+}
+
+body main .front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .front .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .front .about a {
+  display: inline-block;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 5px 10px;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(orange), to(yellow));
+  background-image: linear-gradient(to right, orange, yellow);
+}
+
+body main .front .about a:hover {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(yellow));
+  background-image: linear-gradient(to left, orange, yellow);
+}
+
+body main .front .img img {
+  margin-top: 30px;
+}
+
+body main .office {
+  margin: 100px;
+}
+
+body main .office .cards-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .office .cards-menu .card {
+  border: none;
+  text-align: center;
+}
+
+body main .office .cards-menu .card span {
+  color: #777777;
+}
+
+body main .office .cards-menu .card a {
+  background-image: -webkit-gradient(linear, left top, right top, from(blue), to(aqua));
+  background-image: linear-gradient(to right, blue, aqua);
+  border-radius: 30px;
+  margin-top: 10px;
+  color: white;
+  padding: 5px 0px;
+}
+
+body main .office .cards-menu .card a:hover {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, right top, left top, from(blue), to(aqua));
+  background-image: linear-gradient(to left, blue, aqua);
+}
+
+body main .creat-new-account h2 {
+  text-align: center;
+}
+
+body main .creat-new-account form {
+  background-color: #c9c9c9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .creat-new-account form input {
+  font-size: 1.5em;
+  width: 30%;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+}
+
+body main .creat-new-account form a {
+  background-image: -webkit-gradient(linear, left top, right top, from(aqua), to(blue));
+  background-image: linear-gradient(to right, aqua, blue);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body main .creat-new-account form a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(aqua), to(blue));
+  background-image: linear-gradient(to left, aqua, blue);
+}
+
+body main .programming-language h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+body main .programming-language .card-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main .programming-language .card-menu .card {
+  border: none;
+  text-align: center;
+}
+
+body main .programming-language .card-menu .card a {
+  background-image: -webkit-gradient(linear, left top, right top, from(aqua), to(blue));
+  background-image: linear-gradient(to right, aqua, blue);
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: white;
+}
+
+body main .programming-language .card-menu .card a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(aqua), to(blue));
+  background-image: linear-gradient(to left, aqua, blue);
+}
+
+body main .programming-language .card-menu :nth-child(4) {
+  margin-top: 16px;
+}
+
+body main .onenote {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+body main .onenote .right p {
+  color: #777777;
+}
+
+body main .onenote .right a {
+  text-decoration: none;
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(blue), to(aqua));
+  background-image: linear-gradient(to right, blue, aqua);
+  color: white;
+  padding: 0px 15px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+body main .onenote .right a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(blue), to(aqua));
+  background-image: linear-gradient(to left, blue, aqua);
+}
+
+body main .os {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main .os .left {
+  margin-top: 50px;
+}
+
+body main .os .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .os .right a {
+  text-decoration: none;
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(blue), to(aqua));
+  background-image: linear-gradient(to right, blue, aqua);
+  color: white;
+  padding: 0px 15px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+body main .os .right a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(blue), to(aqua));
+  background-image: linear-gradient(to left, blue, aqua);
+}
+
+body footer {
+  background-color: #919191;
+  margin-top: 100px;
+}
+
+body footer .lesson-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body footer .lesson-menu .lesson {
+  padding: 40px 0px;
+}
+
+body footer .lesson-menu .lesson ul li {
+  list-style-type: none;
+}
+
+body footer .lesson-menu .lesson ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+body footer .lesson-menu .lesson ul li a:hover {
+  color: aqua;
+}
+
+body footer .contact-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 50px 0px;
+}
+
+body footer .contact-menu .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .contact-menu .icon i {
+  color: white;
+  font-size: 3em;
+}
+
+body footer .contact-menu .icon span {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  body header .top-header {
+    display: none;
+  }
+  body main .front .about {
+    margin-top: 50px;
+  }
+  body main .office .cards-menu .card {
+    margin-top: 40px;
+  }
+  body main .office .cards-menu .card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body main .office .card-menu .card {
+    margin-top: 40px;
+  }
+  body main .creat-new-account form {
+    background-color: #c9c9c9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .creat-new-account form input {
+    width: 50%;
+  }
+  body main .os .left, body main .onenote .left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body main .front img {
+    width: 100%;
+    height: 400px;
+  }
+  body main .programming-language .card-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .programming-language .card-menu .card {
+    margin: 50px 0px;
+  }
+  body main .office .cards-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body footer .lesson-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body footer .contact-menu .icon .text {
+    display: none;
+  }
+}

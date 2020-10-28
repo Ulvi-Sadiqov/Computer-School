@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComputerSchool.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bc3dcb3e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  
+    <header>
+      <div class="top-header"> 
+        <div class="contact">
+            <div class="contact1">
+             <span>contact:</span>
+                <a href="#" onclick="Call()">+3202 </a>
+            </div>
+            <div class="contact2">
+                <span>email:</span>
+                   <a href="#" onclick="mail()">Business@gmail.com</a>
+            </div>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+    </div>  
+    <div class="bottom-header">
+      <nav class="navbar navbar-expand-lg  ">
+        <img src="images/logo.png" alt="" style="margin-left: 50px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-sliders-h"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto" style="margin-right: 50px;">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MyBusiness</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Work Group
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="group1.html">1</a>
+            <a class="dropdown-item" href="group2.html">2</a>
+            <a class="dropdown-item" href="#">3</a>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true" onclick="SignIn()">Sign in</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " onclick="Windows()" href="#" tabindex="-1" aria-disabled="true">Setting</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav> 
+    </div>
+      
+    </header>
+
+    <main>
+      <section class="front">
+         <div class="about">
+              <h2 id="name"></h2>
+              <h1>Programmer</h1>
+              <span>Learn HTMl ,Css ,Js, C#</span>
+              <p>Learn 20 month</p>
+              <a href="" >Get started</a>  <br>
+              <a href="#" id="join" onclick="join()" >Join</a>
+         </div>
+         <div class="img"> 
+                <img src="images/programmer.jpg" alt=""  height="400px">
+         </div>
+      </section>
+
+      <section class="office">
+        <h2 style="text-align: center;">Office Apps</h2>
+   <div class="cards-menu">
+    <div class="card">
+        <img src="images/word.png" alt="" width="150px" height="150px">
+        <h4>Word</h4>
+        <span>Make Text</span>
+        <a href="#">Learn</a>
+        <a href="https://www.office.com/launch/word?ui=en-US&rs=US&auth=2">Join</a>
+        </div>
+    <div class="card">
+       <img src="images/powerpoint.png" alt="" width="150px" height="150px">
+        <h4>Powerpoint</h4>
+       <span>Make Slide</span>
+       <a href="#">Learn</a>
+       <a href="https://www.office.com/launch/powerpoint?auth=2">Join</a>
+      </div>
+    <div class="card">
+      <img src="images/excel.png" alt=""width="150px" height="150px">
+      <h4>Excel</h4>
+       <span>Make Table</span>
+       <a href="#">Learn</a>
+       <a href="https://www.office.com/launch/excel?auth=2">Join</a>
+    </div>
+   </div>
+      </section>
+
+
+      <section class="creat-new-account" id="new">
+        <h2>Creat New Account</h2>
+          <form action="">
+            <label for="">Name:</label><input type="text" placeholder="Enter your Name"> <br>
+           <label for="">Email:</label> <input type="email" name="" id="" placeholder="Enter Email"> <br>
+           <label for="">Parol:</label> <input type="password" name="" id="" placeholder="Password">
+           <a href="" onclick="NewAccount()">Creat Account</a>
+          
+          </form>
+      </section>
+
+
+      <section class="programming-language">
+
+        <h2>Programming Language</h2>
+        <div class="card-menu">
+          <div class="card">
+             <img src="images/javascript.png" alt="" width="100px" height="120px">
+             <h4>JS</h4>
+             <a href="https://www.w3schools.com/js/default.asp">Learn</a>
+             <a href="https://playcode.io/">Join</a>
+          </div>
+          <div class="card">
+            <img src="images/html.png" alt=""width="120px" height="120px">
+            <h4>HTML</h4>
+            <a href="https://www.w3schools.com/html/default.asp">Learn</a>
+            <a href="https://playcode.io/">Join</a>
+          </div>
+          <div class="card">
+            <img src="images/css.png" alt=""width="100px" height="120px">
+            <h4>CSS</h4>
+            <a href="https://www.w3schools.com/css/default.asp">Learn</a>
+            <a href="https://playcode.io/">Join</a>
+          </div>
+          <div class="card">
+            <img src="images/csharp.png" alt=""width="100px" height="100px">
+            <h4>C#</h4>
+            <a href="https://www.w3schools.com/cs/default.asp">Learn</a>
+            <a href="https://dotnetfiddle.net/">Join</a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="onenote">
+        
+        <div class="left">
+             <img src="images/onenote.jpg" alt="">
+        </div>
+        <div class="right">
+             <h2>OneNote</h2>
+             <p>Creat Project. There are draw,check,audio <br> video , img , sticker function in the OneNote</p>
+             <a href="">Learn</a> <br>
+             <br>
+             <a href="https://www.microsoft.com/en-ww/microsoft-365/onenote/digital-note-taking-app?rtc=1" >Join</a>
+        </div>
+      </section>
+
+
+      <section class="os">
+        <div class="left">
+            <img src="images/windows10.svg" alt="" width="170px" height="170px">
+        </div>
+        <div class="right">
+            <h2>Windows 10</h2>
+            <p>A new operating system.</p>
+            <a href="">Learn More</a>
+            <a href="">Apps</a>
+            <a href="">New Function</a>
+        </div>
+      </section>
+
+    </main>
+
+<footer>
+
+<div class="lesson-menu">
+
+   <div class="lesson">
+       <ul>
+         <li>
+           <a href="">Html</a>
+         </li>
+         <li>
+          <a href="">Css</a>
+        </li>
+        <li>
+          <a href="">JS</a>
+        </li>
+        <li>
+          <a href="">C#</a>
+        </li>
+       </ul>
+   </div>
+   <div class="lesson">
+    <ul>
+      <li>
+        <a href="">Bootstrap</a>
+      </li>
+      <li>
+       <a href="">Sass</a>
+     </li>
+     <li>
+       <a href="">Ajax</a>
+     </li>
+     <li>
+       <a href="">Windows 10</a>
+     </li>
+    </ul>
+   </div>
+   <div class="lesson">
+    <ul>
+      <li>
+        <a href="">Web sites</a>
+      </li>
+      <li>
+       <a href="">Templates</a>
+     </li>
+     <li>
+       <a href="">Editor</a>
+     </li>
+     <li>
+       <a href="">Binary</a>
+     </li>
+    </ul>
+   </div>
+   <div class="lesson">
+    <ul>
+      <li>
+        <a href="">Apps</a>
+      </li>
+      <li>
+       <a href="">Shortcut</a>
+     </li>
+     <li>
+       <a href="">Draw</a>
+     </li>
+     <li>
+       <a href="">More</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <hr>
+  <div class="contact-menu">
+    <div class="icon">
+     <a href="#ffw"onclick="like()"><i class="far fa-thumbs-up" id="like" ></i></a> 
+       <span class="text">I Like This Website</span>
+    </div>
+    <div class="icon">
+          <a href="#fwef"onclick="dislike()"><i class="far fa-thumbs-down" id="dislike" onclick="dislike()"></i></a>
+       <span class="text" >I Dislike This Website</span>
+
+  </div>
+</div>
+
+
+
+</footer>
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
